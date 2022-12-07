@@ -92,3 +92,31 @@ button {
 button:hover {
     background: #2fc714;
 }
+
+@media screen and (max-width: 1150px) {
+    .biog-text {
+        margin: 35px 25px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .biog-text {
+        margin: 25px 5px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .skills {
+        width: 99%;
+    }
+
+    .biog {
+        width: 99%;
+    }
+
+    .biog-text {
+        margin: 30px;
+    }
+}
