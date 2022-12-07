@@ -13,7 +13,7 @@ setTimeout(() => {
 setTimeout(() => {
     imgBiog.style.width = '100px';
     imgBiog.style.height = '130px';
-    textBiog.innerHTML = 'Привіт, мене звати Сергій, це інтерактивний сайт в якому заховано безліч цікавих пасхалок, погнали!'
+    textBiog.innerHTML = 'Привіт, мене звати Сергій, це інтерактивний сайт в якому заховано безліч цікавих пасхалок, погнали! (тисни на фото)'
 }, 3000)
 
 butoonSkills.addEventListener('click', () => {
