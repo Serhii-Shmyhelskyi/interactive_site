@@ -42,16 +42,22 @@ p {
     margin: 5px auto;
 }
 
+.content {
+    display: flex;
+}
+
 .stf:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
+
 .skills {
     width: 49%;
     height: 150px;
-    margin-right: 0.25%;
+    margin: 0 auto;
     border-radius: 20px;
     float: left;
     background: rgb(179, 219, 238);
@@ -61,7 +67,7 @@ p {
 .biog {
     width: 49%;
     height: 150px;
-    margin-right: 0.25%;
+    margin: 0 auto;
     border-radius: 20px;
     float: left;
     background: rgb(179, 219, 238);
