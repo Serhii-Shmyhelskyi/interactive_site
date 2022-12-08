@@ -1,9 +1,9 @@
-const butoonSkills = document.querySelector('.skills-b');
-const headerSkills = document.querySelector('.skills-header');
-const contentSkills = document.querySelector('.skills-content');
-const headerHeader = document.querySelector('.header-header');
-const imgBiog = document.querySelector('.biog-img');
-const textBiog = document.querySelector('.biog-text');
+let butoonSkills = document.querySelector('.skills-b');
+let headerSkills = document.querySelector('.skills-header');
+let contentSkills = document.querySelector('.skills-content');
+let headerHeader = document.querySelector('.header-header');
+let imgBiog = document.querySelector('.biog-img');
+let textBiog = document.querySelector('.biog-text');
 
 setTimeout(() => {
     headerHeader.style.color = 'green';
@@ -49,3 +49,25 @@ imgBiog.addEventListener('mouseenter', () => {
 imgBiog.addEventListener('mouseleave', () => {
     imgBiog.src = imgArray[0];
 })
+
+// ------------ Блок слайдера ------------------
+
+let offset = 0;
+const sliderContent = document.querySelector('.slider-content');
+
+document.querySelector('.slider-next').addEventListener('click', () => {
+    offset += 200;
+    if (offset > 600) {
+        offset = 0;
+    }
+    sliderContent.style.left = -offset + 'px';
+})
+
+document.querySelector('.slider-prew').addEventListener('click', () => {
+    offset -= 200;
+    if (offset < 0) {
+        offset = 600;
+    }
+    sliderContent.style.left = -offset + 'px';
+})
+
